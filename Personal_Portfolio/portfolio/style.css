@@ -1,0 +1,554 @@
+* {
+    margin: 0;
+    padding: 0;
+    background: #000;
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* NAVBAR STYLE CSS  */
+
+
+a {
+    text-decoration: none;
+    color: #ffbf35;
+}
+
+
+.name {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 42px;
+    padding: 30px;
+}
+
+
+.navbar {
+    position: fixed;
+    right: 0;
+    top: 10%;
+
+}
+
+.width-33-logo {
+    font-size: 40px;
+}
+
+.navbar nav ul li {
+    display: inline;
+    text-decoration: none;
+    margin: 1vw;
+    font-size: 19px;
+    color: #ffbf35;
+}
+
+.navbar nav ul li a:hover {
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.image {
+    /* top: 15%;
+    position: relative;
+    left: 30%; */
+    height: 100vh;
+    width: 70%;
+}
+
+.image img {
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    border: 10px solid #ffbf35;
+    position: relative;
+    top: 15%;
+    left: 20%;
+}
+
+.container1 {
+    display: flex;
+}
+
+/* .img{
+    
+
+} */
+
+@media (max-width:700px) {
+    .container {
+        height: 17.5vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+
+
+    .banner-section {
+        margin-top: 0vh;
+        margin-left: 22vw;
+    }
+
+    .banner-section a {
+        height: 40px;
+        width: 40px;
+        line-height: 40px;
+    }
+
+}
+
+@media (max-width: 720px) {
+    #home {
+        height: 130vh;
+    }
+
+    .name {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image img {
+        height: 260px;
+        width: 260px;
+        border-radius: 50%;
+        border: 10px solid #ffbf35;
+        position: relative;
+        top: 25%;
+        left: 22%;
+    }
+
+    .navbar {
+        position: fixed;
+        display: block;
+        margin: auto;
+        width: 117%;
+        top: 10%;
+    }
+
+    .width-33-logo {
+        font-size: 60px;
+    }
+
+    .navbar nav ul {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    .navbar nav ul li {
+        font-size: larger;
+    }
+
+    #home {
+        display: flex;
+        justify-content: center;
+    }
+
+    #home .tagline {
+        font-size: 144%;
+        position: relative;
+        top: -20%;
+    }
+
+    #home .banner-section h2 {
+        display: block;
+        width: 135%;
+
+    }
+
+    .icons {
+        display: flex;
+        margin-top: 24%;
+    }
+
+    #home .banner-section a {
+
+        font-size: 15px;
+        margin-top: 25px;
+        margin-left: 6px;
+        height: 34px;
+        width: 34px;
+        line-height: 34px;
+
+    }
+}
+
+
+
+/* HOME PAGE STYLE CSS */
+
+#home {
+    height: 100vh;
+}
+
+.width-50 {
+    float: left;
+    width: 50%;
+}
+
+.banner-section {
+    width: 100%;
+    float: left;
+    margin-top: 25vh;
+}
+
+.banner-section h1 {
+    font-size: 48px;
+    margin-top: 10px;
+    font-weight: bolder;
+}
+
+.banner-section h2 {
+    font-size: 20px;
+    line-height: 25px;
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+.banner-section a {
+    float: left;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 20px;
+    border-radius: 50%;
+    text-align: center;
+    border: 2px solid #ffbf35;
+    color: #ffbf35;
+    margin-left: 10px;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+}
+
+.span-col {
+    color: #ffbf35;
+}
+
+/*****Main BANNER IMAGE*****/
+.main-panel img {
+    margin-top: 10%;
+    width: 100%;
+    margin-left: 10%;
+}
+
+/* ABOUT SECTION  */
+#about {
+    height: 130vh;
+}
+
+.heading-text {
+    width: 100%;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #ffbf35;
+}
+
+#about p {
+    color: white;
+    font-size: 25px;
+}
+
+
+.firstpara {
+    display: block;
+    margin: auto;
+    width: 70%;
+    margin-top: 20vh;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+.secondpara {
+    display: block;
+    margin: auto;
+    width: 70%;
+    margin-top: 15vh;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+
+@media (max-width:720px) {
+
+    #about {
+        height: 185vh;
+        margin-top: 20%;
+    }
+
+    .firstpara{
+        margin-top: 13vh;
+    }
+    .secondpara{
+        margin-top: 13vh;
+    }
+    #about p {
+        font-size: 20px;
+    }
+
+}
+
+
+/* SKILL SECTION  */
+#skill {
+    height: 100vh;
+}
+
+.skill {
+    margin-top: 30px;
+    font-size: 17px;
+}
+
+.skill span {
+    float: right;
+}
+
+.skill div {
+    width: 100%;
+    float: left;
+    margin-top: 5px;
+    background: #e7e7e7;
+    border-radius: 10px;
+}
+
+.skill div span {
+    background: #ffbf35;
+    height: 5px;
+    float: left;
+}
+
+div[role="progressbar"] {
+    color: #ffbf35;
+    margin-left: 100px;
+    margin-bottom: 20px;
+    width: 100px;
+    ;
+    height: 100px;
+    ;
+    border-radius: 50%;
+
+    place-items: center;
+    display: grid;
+
+    --pgPercentage: var(--value);
+    background: radial-gradient(closest-side, black 80%, transparent 0 99.9%, black 0),
+        conic-gradient(#ffbf35 calc(var(--pgPercentage) * 1%), #ffe6af 0);
+
+
+}
+
+#skill .item {
+    float: right;
+    display: block;
+    margin: auto;
+    width: 25%;
+
+}
+
+
+@media (max-width:720px) {
+    .skill-bar {
+        position: relative;
+        left: 20%;
+        margin-bottom: 25%;
+    }
+
+    #skill .item {
+        display: block;
+        margin: auto;
+        width: 85%;
+
+    }
+
+
+}
+
+/*SERVICE SECTION*/
+#service {
+    height: 100vh;
+
+}
+
+.service-list {
+    padding: 40px;
+    margin-top: 35px;
+    border-radius: 15px;
+    width: 94%;
+    float: left;
+}
+
+.service-list i {
+    font-size: 50px;
+    color: #ffbf35;
+    width: 70px;
+    float: left;
+}
+
+.service-list h3 {
+    font-size: 28px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+}
+
+.service-list p {
+    font-size: 20px;
+    line-height: 25px;
+}
+
+@media (max-width:720px) {
+    .service-list p {
+        width: 90%;
+    }
+
+}
+
+@media (min-width:720px) {
+    .my-service {
+        float: left;
+        width: 50%;
+    }
+}
+
+/* CONTACT SECTON */
+#contact {
+    height: 100vh;
+}
+
+.contact form {
+    width: 66%;
+    margin: 0px auto;
+}
+
+.contact input,
+textarea {
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #a1a1a1;
+}
+
+.contact textarea {
+    height: 80px;
+}
+
+.contact button {
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
+    height: 40px;
+    padding: 10px;
+    background: #ffbf35;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+}
+
+.contact h3 {
+    font-size: 26px;
+    text-align: center;
+    margin-top: 60px;
+    color: #ffbf35;
+}
+
+.contact h4 {
+    font-size: 22px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.contact p {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.width-33 {
+    position: initial;
+    top: 15%;
+    display: block;
+    margin: auto;
+    width: 10%;
+
+}
+
+@media (max-width:720px) {
+    #contact {
+        height: 130vh;
+    }
+
+    .width-33 {
+        /* display: grid; */
+        width: 40%;
+    }
+}
+
+/* FOOTER SECTION  */
+
+.footer {
+    padding: 250px 0px 40px 0px;
+    width: 95%;
+    float: left;
+}
+
+.footer-sect {
+    color: #b3b3b3;
+}
+
+.footer-sect a {
+    color: #b3b3b3;
+    margin-left: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+}
+
+.social-icon a i {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #cdcdcd;
+    line-height: 50px;
+    font-size: 20px;
+    border-radius: 50%;
+}
+
+@media (max-width:720px) {
+    .footer-container .social-icon {
+        position: relative;
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: 10%;
+
+    }
+
+    .para {
+        display: block;
+        margin: auto;
+        width: 85%;
+        left: 10%;
+        position: sticky;
+    }
+}
